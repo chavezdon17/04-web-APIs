@@ -1,7 +1,7 @@
 const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
-
+var timerButton = document.querySelector('timer ')
   function buildQuiz(){}
 
 function showResults(){}
@@ -10,7 +10,7 @@ function showResults(){}
 buildQuiz();
 
 // on submit, show results
-submitButton.addEventListener('click', showResults)
+startButton.addEventListener('click', showResults)
 const myQuestions = [
     {
       question: "Who invented JavaScript?",
@@ -41,8 +41,18 @@ const myQuestions = [
         d: "all the above",
       },
       correctAnswer: "d"
-    },]
-functions showResults(myQuestions, quizContainer)
+    },
+    {
+      question: "Curley brackets are used for what?",
+      answers: {
+        a: "to make an equations",
+        b: "to define start and end of functions",
+        c: "for arrays",
+        d: "to make alerts",
+      },
+      correctAnswer: "b"
+    },
+functions ,showResults(myQuestions, quizContainer)
 
 var output []
 var answers;
@@ -53,7 +63,8 @@ function timer(){
   var timer = setInterval(function(){
       document.getElementById('timerDisplay').timer='00'+sec;
       if (sec < 0) {
-          clearInterval(timer);
+         alert("time has run up.");
       }
   }, 1000);
 }
+timerButton.addEventListener("click", startTimer);
