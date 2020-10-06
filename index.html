@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>04-Web API's</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <h1>Coding Quiz Challenge!</h1>
+  <div id="timer">
+    <h2>Timer</h2>
+    <p id="timerDisplay">00:60</p>
+    </div>
 
   <body>
     <div id="quiz"></div>
     <p>
       Take this multiple choice coding challege to put your skills to the test.
-      This quiz will be timed with for questions
+      This quiz will be timed, wrong answers will take time off of the timer.
+      there are four questions on this quiz.
     </p>
 
-    <button>Start quiz</button>
+    <button id="startbutton" onclick=startTimer>Start Quiz</button>
     <div id="results"></div>
+    <script src="./javascript.js/script>
   </body>
 </html>
