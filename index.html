@@ -13,6 +13,8 @@
     </div>
 
   <body>
+    <div class="container">
+
     <div id="quiz"></div>
     <p>
       Take this multiple choice coding challege to put your skills to the test.
@@ -20,8 +22,20 @@
       there are four questions on this quiz.
     </p>
 
-    <button id="startbutton" onclick=startTimer>Start Quiz</button>
+    <button id="startButton" class="start-btn btn" onclick= "myquestions()">Start Quiz</button>
+    <form class="hide"> 
+      <h1>"Who invented JavaScript?"</h1>
+      <input type="radio" id="question1" value="a">
+      <input type="radio" id="question1" value="b">
+      <input type="radio" id="question1" value="c">
+      <input type="radio" id="question1" value="d">
+      <label for="question1">a</label><br>
+      <label for="question1">b</label><br>
+      <label for="question1">c</label><br>
+      <label for="question1">d</label><br>
+
+    </form>
     <div id="results"></div>
-    <script src="./javascript.js/script>
+    <script src="./javascript.js"></script>
   </body>
 </html>
